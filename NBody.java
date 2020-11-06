@@ -108,6 +108,8 @@ public class NBody extends JPanel implements ActionListener{
 			//Draws shape based on x,y axis
 			for (int i=0; i<numberPlanets; i++){
 				Ellipse2D.Double shape = new Ellipse2D.Double(planetArray[i][1], planetArray[i][2], planetArray[i][5], planetArray[i][5]);
+				Color myColor = new Color(255/(i+1), 255/(i+1), 255/(i+1));
+				g.setColor(myColor);
 				g.fill(shape);
 			}
 
